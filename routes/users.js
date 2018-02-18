@@ -8,8 +8,12 @@ var x=[];
 /*post selected data-----------------*/
 router.post("/selectedData",function(req,res){
   console.log("selected data is here.........")
+  // here i made changes..........................
   console.log(req.body);
-
+   for(var i=0;i<req.body.length;i++){
+      console.log("{ text:" + req.body[i].text + ",intentName :"+ req.body[i].intentName +",entitytName :"+ req.body[i].entitytName + "}" )
+  }
+//..........................................................
 })
 
 /*------------------------------------------------*/
