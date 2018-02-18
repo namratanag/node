@@ -20,7 +20,15 @@ var arr=[];
            checkedValue = inputElements[i].value;
            var res = (checkedValue + "").split("*");
            console.log(res);
-           arr[i]=res;
+                 
+ // new code added here.....................................................
+                 
+           var text=res[0];
+           var intentName =res[1];
+           var entityName=[];
+        var obj={text,intentName,entityName};
+           arr[i]=obj;
+   //............................................................................      
         //    for(var j=0;j<res.length;j++){
         //        selectedData.text=res[j];
         //        selectedData.intentName=res[]
